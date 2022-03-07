@@ -40,8 +40,8 @@ public class SignUpController extends HttpServlet {
 		String pwd = request.getParameter("password");
 
 		String gender = request.getParameter("gender");
-		String notification = request.getParameter("notification");
-		String qualification = request.getParameter("qualification");
+		String notification[] = request.getParameterValues("notification");
+		String qualification[] = request.getParameterValues("qualification");
 		
 		out.println("<html><body>");
 		out.println("Welcome " + uname);
